@@ -18,6 +18,8 @@ Pense em uma Role como um crachá temporário entregue para realizar uma ativida
 
 Após ser assumida, a AWS gera credenciais temporárias que permitem executar determinadas ações durante um período limitado.
 
+---
+
 ### Características de uma IAM Role
 
 - Não possui senha.
@@ -45,6 +47,8 @@ As credenciais temporárias são compostas por:
 - Secret Access Key
 - Session Token
 
+---
+
 ### Vantagens Reais
 
 #### Expiração automática 
@@ -52,6 +56,8 @@ As credenciais temporárias são compostas por:
 As credenciais possuem tempo de vida limitado. Elas duram de poucos minutos a algumas horas e depois morrem sozinhas.
 
 > Isso reduz significativamente o risco de comprometimento.
+
+---
 
 #### Maior segurança - Zero Leakage
 
@@ -82,9 +88,13 @@ sequenceDiagram
 
 A AWS cobra Roles em três cenários principais que você precisa identificar no enunciado:
 
+---
+
 ### A) Aplicações em EC2 (EC2 Instance Profile) acessando o Amazon S3
 
 Uma aplicação hospedada em uma instância EC2 precisa acessar um bucket S3.
+
+---
 
 #### ❌ Maneira incorreta
 
@@ -98,6 +108,8 @@ Problemas:
 - Rotação manual.
 - Alto risco de segurança.
 
+---
+
 #### ✅ Maneira correta
 
 - Criar uma IAM Role com acesso ao S3.
@@ -108,6 +120,8 @@ A própria instância obtém automaticamente as credenciais temporárias atravé
 
 Nenhuma Access Key precisa ser armazenada.
 
+---
+
 #### EC2 Instance Profile
 
 O **Instance Profile** é o mecanismo utilizado para anexar uma IAM Role a uma instância EC2.
@@ -116,6 +130,7 @@ A aplicação consulta automaticamente o serviço de metadados da instância par
 
 Não existe configuração manual de chaves.
 
+---
 
 ### B) Acesso Cross-Account
 
@@ -130,50 +145,140 @@ Exemplo:
 
 A Conta B cria uma Role permitindo que usuários da Conta A possam assumi-la.
 
-    Solução: A Conta B cria uma Role que "confia" na Conta A. O usuário da Conta A assume essa Role temporariamente para realizar a auditoria sem precisar de um usuário fixo na outra conta.
+O usuário da Conta A assume essa Role temporariamente para realizar a auditoria sem precisar de um usuário fixo 
+na outra conta.
 
-C. Federação de Identidades (Identity Federation)
-Seus funcionários já fazem login no Active Directory da empresa ou no Google. Você não quer criar 500 usuários no IAM de novo.
+~~~mermaid
+flowchart LR
 
-    Solução: O AWS IAM Identity Center permite que esses usuários externos façam login com suas credenciais corporativas e assumam uma Role específica dentro da AWS.
+    subgraph A["🏢 Conta AWS A"]
+        U[👤 Usuário]
+    end
+
+    STS["🔐 AWS STS"]
+
+    subgraph B["🏢 Conta AWS B"]
+        ROLE[🛡️ IAM Role]
+        TEMP[🎫 Credenciais Temporárias]
+        RES[☁️ Recursos AWS]
+    end
+
+    U -->|AssumeRole| STS
+    STS --> ROLE
+    ROLE --> TEMP
+    TEMP --> RES
+~~~
+
+> Não é necessário criar usuários duplicados em cada conta.
 
 ---
 
-4. IAM User vs. IAM Role: O Duelo
+### C) Federação de Identidades (Identity Federation)
+
+Seus funcionários já fazem login no Active Directory da empresa ou no Google. Você não quer criar 500 usuários no IAM de novo.
+
+Muitas empresas já utilizam provedores de identidade corporativos.
+
+Exemplos:
+
+- Microsoft Active Directory
+- Microsoft Entra ID (Azure AD)
+- Google Workspace
+- Okta
+
+Nesses casos, não faz sentido criar centenas de usuários IAM.
+
+A solução é utilizar **Identity Federation**.
+
+O usuário realiza login utilizando sua identidade corporativa e recebe uma Role temporária na AWS.
+
+O serviço atualmente recomendado para esse cenário é o **AWS IAM Identity Center**.
+
+O AWS IAM Identity Center permite que esses usuários externos façam login com suas credenciais corporativas e assumam uma Role específica dentro da AWS.
+
+---
+
+## 4. IAM User vs. IAM Role: O Duelo
 Não caia nas pegadinhas da banca. Memorize as diferenças:
-Critério
-	
-IAM User
-	
-IAM Role
-Público
-	
-Humanos ou sistemas legados fixos.
-	
-Serviços AWS, aplicações ou usuários externos.
-Credenciais
-	
-Longo prazo (Senha / Access Keys fixas).
-	
-Curto prazo (STS / Tokens dinâmicos).
-Acesso
-	
-Persistente (sempre ativo).
-	
-Temporário (precisa assumir a função).
-Risco
-	
-Alto (chaves podem vazar/ser esquecidas).
-	
-Baixo (as chaves expiram sozinhas).
-🎯 Gatilho de Exame
+
+| Característica | IAM User | IAM Role |
+|----------------|----------|-----------|
+| Destinado para | Pessoas ou sistemas legados | Serviços AWS, aplicações e usuários externos |
+| Credenciais | Longo prazo (Senha / Access Keys fixas). | Curto prazo (STS / Tokens dinâmicos). |
+| Acesso | Permanentes (sempre ativo) | Temporárias (precisa assumir a função) |
+| Risco | Alto (chaves podem vazar/ser esquecidas). | Baixo (as chaves expiram sozinhas). |
+| STS | Não | Sim |
+| Segurança | Menor | Maior |
+| Boa prática AWS | Apenas quando necessário | Sempre que possível |
+
+---
+
+### Quando utilizar IAM Role?
+
+Utilize Roles sempre que:
+
+- Uma instância EC2 precisar acessar outro serviço AWS.
+- Uma função Lambda acessar DynamoDB ou S3.
+- Um container ECS acessar Secrets Manager.
+- Um Pod no EKS acessar recursos AWS (IRSA).
+- Uma conta AWS acessar outra conta.
+- Usuários corporativos acessarem a AWS via Federação.
+
+---
+
+### Benefícios das IAM Roles
+
+- Elimina Access Keys permanentes.
+- Credenciais expiram automaticamente.
+- Facilita rotação de credenciais.
+- Reduz risco de vazamento.
+- Permite acesso entre contas AWS.
+- Implementa facilmente o Princípio do Menor Privilégio.
+
+---
+
+## 🎯 Gatilho de Exame
 Se você ler estes termos em inglês, a resposta é IAM Role:
 
-    Temporary security credentials: Pista direta para Roles e STS.
-    Cross-account access: Delegar acesso entre contas AWS diferentes.
-    Federation / Federated identity: Usuários externos acessando a AWS (AD, SAML 2.0).
-    Assume a role: O verbo de ação para usar uma Role.
-    EC2 instance profile: O "contêiner" que permite anexar a Role à máquina virtual.
-    Least Privilege: Roles ajudam a aplicar o privilégio mínimo ao dar acesso apenas pelo tempo necessário.
+| Termo | Significado |
+|--------|-------------|
+| IAM Role | Identidade temporária |
+| AssumeRole | Assumir uma Role |
+| AWS STS | Gera credenciais temporárias |
+| Temporary Security Credentials | Access Key temporária + Secret + Session Token |
+| EC2 Instance Profile | O "contêiner" que permite anexar a Role as EC2. |
+| Cross-Account Access | Delegar acesso entre contas AWS diferentes |
+| Identity Federation | Login usando identidade externa (AD, SAML 2.0). |
+| IAM Identity Center | Federação de identidades na AWS |
+| Least Privilege | Conceder apenas o acesso necessário |
 
-Sinal de Alerta: A prova pode perguntar: "Qual a melhor forma de uma aplicação em EC2 acessar o S3?". Se uma opção sugerir criar chaves de acesso fixas, ela está ERRADA. A resposta vencedora sempre envolverá IAM Roles.
+---
+
+## ⚠️ Pegadinhas de Prova
+
+- **IAM Roles não possuem senha.**
+- **IAM Roles não possuem Access Keys permanentes.**
+- Quem gera as credenciais temporárias é o **AWS STS**.
+- Aplicações executando em **EC2** devem utilizar **IAM Roles**, nunca Access Keys armazenadas no código.
+- **Cross-Account Access** é implementado utilizando **IAM Roles**.
+- **Identity Federation** também utiliza Roles para conceder acesso temporário.
+- Sempre que a questão mencionar **Temporary Security Credentials**, **AssumeRole** ou **STS**, a resposta provavelmente envolve **IAM Roles**.
+- Para aplicações na AWS, a melhor prática é **não armazenar credenciais**, mas utilizar **IAM Roles** sempre que possível.
+
+---
+
+## 🚨 Sinal de Alerta: 
+
+> **A prova pode perguntar:** "Qual a melhor forma de uma aplicação em EC2 acessar o S3?". 
+>
+> Se uma opção sugerir criar chaves de acesso fixas, ela está ***ERRADA.*** A resposta vencedora sempre envolverá ***IAM Roles.***
+
+---
+
+### 🧭 Navegação de Conteúdos
+* [🏠 Menu Principal](../README.md)
+* [⬅️ IAM: Usuários, Grupos e Policies](01-iam-roles-e-acesso-temporario.md)
+* [➡️ Autenticação, MFA e Conta root](02-autenticacao-mfa-e-conta-root.md)
+
+---
+---

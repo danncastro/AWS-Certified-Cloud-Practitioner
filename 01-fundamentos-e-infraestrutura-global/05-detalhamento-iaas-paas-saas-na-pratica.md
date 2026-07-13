@@ -6,6 +6,8 @@ Quanto maior o nível de abstração, menos infraestrutura você precisa adminis
 
 A diferença entre **IaaS**, **PaaS** e **SaaS** está justamente no quanto você controla e no quanto o provedor gerencia para você.
 
+---
+
 ### Visão Geral
 
 Podemos resumir os três modelos assim:
@@ -56,6 +58,7 @@ Além da AWS, exemplos muito conhecidos de SaaS são:
 
 > Foco total na utilização do produto. Quase nenhuma administração.
 
+---
 
 ### Comparação Visual
 

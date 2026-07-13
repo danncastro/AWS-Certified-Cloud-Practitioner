@@ -25,6 +25,8 @@ Exemplos:
 - Access Keys
 - Multi-Factor Authentication (MFA)
 
+---
+
 ### Autorização (Authorization)
 
 Define quais recursos o usuário pode acessar e quais ações pode executar.
@@ -44,6 +46,8 @@ Um **IAM User** representa uma identidade única dentro da sua conta. Pode ser u
 *   **Credenciais de Longo Prazo:** Diferente de acessos temporários, o usuário tem credenciais persistentes, como senha para o console ou **Access Keys** para uso via CLI/API.
 *   **Default:** Por padrão, um usuário novo nasce com **zero permissões** (Implicit Deny). Ele não faz nada até você dar o poder a ele.
 
+---
+
 ### Características
 
 - Possui credenciais permanentes (Long-Term Credentials).
@@ -62,6 +66,8 @@ Gerenciar permissões usuário por usuário é um "trabalho de corno" que não e
 *   **Herança de Permissões:** Você cria um grupo (ex: `Admins`, `Developers`, `Testes`), anexa as permissões ao grupo e joga os usuários lá dentro. Eles herdam tudo automaticamente.
 *   **Vantagem:** Se um dev sai do time de testes e vai para o de produção, você só muda ele de grupo. O acesso antigo some e o novo aparece na hora.
 
+---
+
 ### Funcionamento
 
 1. Cria-se o grupo.
@@ -69,6 +75,8 @@ Gerenciar permissões usuário por usuário é um "trabalho de corno" que não e
 3. Adicionam-se usuários.
 
 Todos os usuários herdam automaticamente as permissões do grupo.
+
+---
 
 ### Regras importantes
 
@@ -137,6 +145,8 @@ Se o cara só precisa ler arquivos de um bucket, não dê permissão de `Adminis
 
 Esse conceito reduz significativamente o impacto caso uma credencial seja comprometida.
 
+---
+
 ### Boas Práticas
 
 - Utilize grupos para organizar permissões.
@@ -178,6 +188,13 @@ Se esses termos aparecerem no enunciado, você já sabe para onde olhar:
 - Policies são escritas em **JSON**.
 - Uma permissão **Deny explícita** sempre prevalece sobre uma permissão **Allow**.
 - O menor privilégio é uma das práticas de segurança mais cobradas na certificação AWS CLF-C02.
+
+---
+
+### 🧭 Navegação de Conteúdos
+* [🏠 Menu Principal](../README.md)
+* [⬅️ Micro-Simulado: Fundamentos e Infraestrutura Global](../01-fundamentos-e-infraestrutura-global/10-micro-simulado-fundamentos.md)
+* [➡️ IAM Roles e Acesso Temporário](01-iam-roles-e-acesso-temporario.md)
 
 ---
 ---

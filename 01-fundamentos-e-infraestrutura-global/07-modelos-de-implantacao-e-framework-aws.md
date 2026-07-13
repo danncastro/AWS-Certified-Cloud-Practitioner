@@ -19,6 +19,8 @@ Nem toda empresa joga tudo para a nuvem de uma vez. Existem três formas princip
 
 > **💡 O Gatilho:** Se a questão fala em conectar o data center local à nuvem usando VPN, Direct Connect ou o serviço AWS Outposts, ela está descrevendo uma arquitetura híbrida.
 
+---
+
 ### AWS Outposts
 
 O **AWS Outposts** leva infraestrutura da AWS para dentro do data center do cliente. Na prática:
@@ -27,6 +29,8 @@ O **AWS Outposts** leva infraestrutura da AWS para dentro do data center do clie
 Isso permite operar aplicações locais utilizando diversos serviços AWS.
 
 > O Outposts é um dos principais gatilhos para identificar uma arquitetura híbrida.
+
+---
 
 ### Comparação dos Modelos
 
@@ -61,6 +65,8 @@ Memorize esses nomes. Eles caem nominalmente e você precisa saber o que cada um
 5. **💰 Otimização de Custos (*Cost Optimization*):** Evitar gastos desnecessários e entregar valor de negócio pelo menor preço possível, O foco é: ***eliminar desperdícios***, ***reduzir custos***, ***aumentar o retorno do investimento***.
 
 6. **Sustentabilidade (*Sustainability*):** É o pilar mais recente do Framework. Seu objetivo é minimizar o impacto ambiental da execução de cargas de trabalho na nuvem, Boas práticas incluem: ***utilização eficiente de recursos***, ***redução de consumo energético*** e ***otimização da infraestrutura***.
+
+---
 
 ### Resumo dos Pilares
 

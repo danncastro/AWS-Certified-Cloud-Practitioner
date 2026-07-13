@@ -26,6 +26,8 @@ Cada Região funciona de forma independente das demais.
 
 Na prova, sempre que perguntarem **"Como escolher uma Região AWS?"**, lembre destes quatro fatores.
 
+---
+
 ### 1️⃣ Conformidade (*Compliance*)
 
 Algumas legislações exigem que os dados permaneçam dentro de um país ou região.
@@ -36,6 +38,8 @@ Exemplos:
 - GDPR (Europa)
 
 Se existir exigência legal sobre onde armazenar os dados, esse costuma ser o principal critério.
+
+---
 
 ### 2️⃣ Proximidade (*Latency*)
 
@@ -48,6 +52,8 @@ Exemplo:
 
 Quanto menor a distância física, menor a latência.
 
+---
+
 ### 3️⃣ Disponibilidade de Serviços
 
 Nem todos os serviços ou funcionalidades da AWS chegam simultaneamente em todas as Regiões.
@@ -58,6 +64,8 @@ Alguns recursos novos (principalmente IA e Machine Learning) costumam aparecer p
 - `us-west-2`
 
 Antes de definir uma Região, confirme que o serviço desejado está disponível nela.
+
+---
 
 ### 4️⃣ Custo
 
@@ -89,6 +97,8 @@ Esses data centers possuem:
 - refrigeração própria;
 - conectividade redundante.
 
+---
+
 ### Isolamento
 
 As AZs ficam separadas fisicamente por quilômetros de distância.
@@ -102,6 +112,8 @@ Exemplos:
 - queda de energia;
 - rompimento de fibra.
 
+---
+
 ### Conectividade
 
 Mesmo estando fisicamente separadas, as AZs são conectadas por fibras ópticas de altíssima velocidade.
@@ -110,6 +122,8 @@ Na prática:
 
 - a comunicação possui baixa latência;
 - para sua aplicação parece que tudo está "lado a lado".
+
+---
 
 ### Visão da Infraestrutura
 
@@ -142,9 +156,11 @@ flowchart TB
 
 ## 3. O Poder do Multi-AZ
 
-Aqui está um dos conceitos mais importantes da certificação.
+Aqui é onde você ganha o jogo. Esse é um dos conceitos mais importantes da certificação.
 
 A AWS incentiva arquiteturas preparadas para falhas.
+
+---
 
 ### Alta Disponibilidade (*High Availability*)
 
@@ -161,6 +177,8 @@ Resultado:
 
 - menos indisponibilidade;
 - maior confiabilidade.
+
+---
 
 ### Tolerância a Falhas (*Fault Tolerance*)
 
@@ -198,6 +216,8 @@ Se a questão mencionar um desastre que afete uma Região inteira (estado, país
 
 Sua aplicação roda na ***região*** `sa-east-1`. Você possui `10 instâncias EC2` mas todas estão em `sa-east-1a`
 
+---
+
 ### O risco
 
 Se essa AZ sofrer uma indisponibilidade:
@@ -207,6 +227,8 @@ Se essa AZ sofrer uma indisponibilidade:
 - rompimento de fibra;
 
 toda a aplicação ficará indisponível.
+
+---
 
 ### A solução
 

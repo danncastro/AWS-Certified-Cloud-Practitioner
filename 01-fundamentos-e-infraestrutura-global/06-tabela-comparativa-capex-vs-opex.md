@@ -34,6 +34,8 @@ Antes de iniciar um projeto, a empresa precisa comprar:
 
 Ou seja: Primeiro você gasta. Depois começa a utilizar.
 
+---
+
 ### Características do CapEx
 
 - Alto investimento inicial.
@@ -55,6 +57,8 @@ Em português:
 > **Despesa Operacional**
 
 Esse é o modelo utilizado pela AWS. Você não compra infraestrutura. Você apenas utiliza os recursos necessários e paga conforme o consumo.
+
+---
 
 ### Características do OpEx
 
@@ -96,6 +100,8 @@ Ao migrar para o modelo OpEx da AWS, esse mesmo milhão fica livre no caixa. A e
 * Investir pesado em marketing para o produto.
 * Testar novas ideias rapidamente (se o teste falhar, é só desligar e parar de pagar).
 
+---
+
 ### Mas o que é Custo de Oportunidade?
 
 Custo de Oportunidade é o que você deixa de ganhar por ter dinheiro preso em infraestrutura física. Na nuvem, o capital é fluido, permanece disponível para investimentos estratégicos..
@@ -110,9 +116,11 @@ Custo de Oportunidade é o que você deixa de ganhar por ter dinheiro preso em i
 |-|-|
 | 20 servidores | R$ 2 milhões |
 
-#### Se utilizar apenas metade da capacidade:
+**Se utilizar apenas metade da capacidade:**
 
 ➡️ O restante do investimento fica parado.
+
+---
 
 ### Modelo AWS
 
@@ -120,14 +128,15 @@ Custo de Oportunidade é o que você deixa de ganhar por ter dinheiro preso em i
 |-|-|
 | 20 servidores | R$ 2 milhões |
 
-
-Empresa inicia utilizando apenas:
+**Empresa inicia utilizando apenas:**
 
 - 2 instâncias EC2.
 
 | Se crescer: | Se diminuir: | Resultado: |
 |-|-|-|
 | ➡️ Cria mais instâncias. | ➡️ Remove as instâncias excedentes. | Paga somente pelo que realmente utilizou. |
+
+---
 
 ### A Grande Mudança
 

@@ -27,19 +27,22 @@ Cada letra representa uma das vantagens oficiais da computação em nuvem segund
 
 ### Mnemônico
 
-```
+~~~
 T.E.P.A.V.G.
+~~~
 
-T → Trade Fixed Expense
-E → Economies of Scale
-P → Provisioning (Stop Guessing Capacity)
-A → Agility
-V → Valor ao Negócio (AWS cuida dos Data Centers)
-G → Go Global
-```
+| Letra | Conceito resumido |
+|-|-|
+| T → | Trade Fixed Expense |
+| E → | Economies of Scale |
+| P → | Provisioning (Stop Guessing Capacity) |
+| A → | Agility |
+| V → | Valor ao Negócio (AWS cuida dos Data Centers) |
+| G → | Go Global |
+
 ---
 
-# 2. Os 6 Pilares do AWS Well-Architected Framework
+## 2. Os 6 Pilares do AWS Well-Architected Framework
 
 Para lembrar dos pilares, utilize o mnemônico:
 
@@ -47,25 +50,28 @@ Para lembrar dos pilares, utilize o mnemônico:
 
 Imagine o **"corpo"** sustentando uma arquitetura bem construída ou na "Estrutura" da arquitetura.
 
-1.  **C**ost Optimization (Otimização de Custos): Entregar valor pelo menor preço. Reduzir custos e eliminar desperdícios.
-2.  **O**perational Excellence (Excelência Operacional): Automatizar processos e melhorar continuamente a operação.
-3.  **R**eliability (Confiabilidade): Garantir alta disponibilidade, recuperar de falhas e mitigar interrupções.
-4.  **P**erformance Efficiency (Eficiência de Performance): Usar recursos de forma eficiente conforme a demanda.
-5.  **S**ecurity (Segurança): Proteger dados, sistemas e ativos.
-6.  **S**ustainability (Sustentabilidade): Minimizar o impacto ambiental.
+1.  `C`ost Optimization (Otimização de Custos): Entregar valor pelo menor preço. Reduzir custos e eliminar desperdícios.
+2.  `O`perational Excellence (Excelência Operacional): Automatizar processos e melhorar continuamente a operação.
+3.  `R`eliability (Confiabilidade): Garantir alta disponibilidade, recuperar de falhas e mitigar interrupções.
+4.  `P`erformance Efficiency (Eficiência de Performance): Usar recursos de forma eficiente conforme a demanda.
+5.  `S`ecurity (Segurança): Proteger dados, sistemas e ativos.
+6.  `S`ustainability (Sustentabilidade): Minimizar o impacto ambiental.
+
+---
 
 ### Mnemônico
 
-```
+~~~
 C.O.R.P.S.S.
-
-C → Cost Optimization
-O → Operational Excellence
-R → Reliability
-P → Performance Efficiency
-S → Security
-S → Sustainability
-```
+~~~
+| Letra | Conceito resumido |
+|-|-|
+| C → | Cost Optimization |
+| O → | Operational Excellence |
+| R → | Reliability |
+| P → | Performance Efficiency |
+| S → | Security |
+| S → | Sustainability |
 
 ---
 
@@ -116,6 +122,8 @@ Leia estes termos em inglês e associe imediatamente ao conceito correto.
 |-|-|
 | utiliza múltiplas **Availability Zones** | utiliza múltiplas **Regiões** |
 
+---
+
 ### Elasticidade ≠ Escalabilidade
 
 | Elasticidade | Escalabilidade |
@@ -123,6 +131,8 @@ Leia estes termos em inglês e associe imediatamente ao conceito correto.
 | cresce automaticamente; | aumenta a capacidade do ambiente; |
 | reduz automaticamente; | mantém o desempenho durante o crescimento. |
 | acompanha a demanda. ||
+
+---
 
 ### Região ≠ Edge Location
 
@@ -133,6 +143,8 @@ Leia estes termos em inglês e associe imediatamente ao conceito correto.
 | executa RDS; | reduz latência;|
 | executa EKS. | armazena cache. |
 
+---
+
 ### CapEx ≠ OpEx
 
 | CapEx | OpEx |
@@ -140,6 +152,8 @@ Leia estes termos em inglês e associe imediatamente ao conceito correto.
 | compra servidores; | paga conforme utiliza; |
 | investimento inicial; | sem investimento inicial elevado; |
 | ativos físicos. | custo operacional variável. |
+
+---
 
 ### Security OF ≠ Security IN
 
@@ -151,7 +165,7 @@ Leia estes termos em inglês e associe imediatamente ao conceito correto.
 | infraestrutura física. | Security Groups; |
 || configurações.|
 
-```mermaid
+~~~mermaid
 mindmap
   root((☁️ Cloud Computing))
 
@@ -185,7 +199,7 @@ mindmap
       Performance Efficiency
       Cost Optimization
       Sustainability
-```
+~~~
 
 ---
 

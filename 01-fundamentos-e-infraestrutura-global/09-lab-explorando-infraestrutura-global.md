@@ -1,6 +1,6 @@
 # 🧪 Lab: Explorando a Infraestrutura Global da AWS
 
-Mano, papo reto: a nuvem não é uma "caixa mágica" perdida na internet.
+Mano, papo reto, a nuvem não é uma "caixa mágica" perdida na internet.
 
 Ela é composta por:
 
@@ -38,6 +38,8 @@ Exemplo:
 | N. Virginia | `us-east-1` |
 | Ohio | `us-east-2` |
 | Tóquio | `ap-northeast-1` |
+
+---
 
 ### Parte 2: Explorando via Console (*Se tiver conta*)
 1.  Faça login no **AWS Management Console**.
@@ -83,6 +85,8 @@ Os valores variam conforme sua localização.
 
 **Conclusão do Dev:** Se o seu cliente está no Brasil, hospedar em Tóquio vai deixar o app "lagado". A proximidade geográfica reduz a latência e melhora a experiência do usuário.
 
+---
+
 ### Imagine dois cenários.
 
 #### Cenário A
@@ -92,6 +96,8 @@ Os valores variam conforme sua localização.
 | 📍 São Paulo | 📍 São Paulo | baixa latência; |
 ||| resposta rápida. |
 
+---
+
 #### Cenário B
 
 | Usuário: | Servidor: | Resultado: |
@@ -99,6 +105,8 @@ Os valores variam conforme sua localização.
 | 📍 São Paulo | 📍 Tóquio | maior tempo de resposta; |
 ||| mais atrasos na comunicação; |
 ||| pior experiência para o usuário. |
+
+---
 
 #### Conclusão
 
@@ -137,6 +145,7 @@ Exemplos:
 
 Se você trocar de Região no Console, esses recursos deixam de aparecer.
 
+---
 
 ### Serviços Globais
 
@@ -150,6 +159,7 @@ Exemplos:
 
 Esses serviços continuam acessíveis independentemente da Região selecionada.
 
+---
 
 ### Amazon S3
 

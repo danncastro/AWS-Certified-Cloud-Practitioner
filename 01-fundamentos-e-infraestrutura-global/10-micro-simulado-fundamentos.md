@@ -12,7 +12,7 @@ Resolva as 20 questões abaixo simulando o ambiente de prova: sem consulta e foc
 
 ---
 
-# Questões
+## Questões
 
 **1. Uma startup quer lançar um novo recurso e precisa de servidores imediatamente, sem passar por processos de aquisição de hardware que levam semanas. Qual característica da computação em nuvem permite essa agilidade?**
 
@@ -391,7 +391,7 @@ Mano, para ler enunciados de simulados na velocidade da luz, procure por estes p
 
 ---
 
-# 💡 Dica de Ouro
+## 💡 Dica de Ouro
 
 Durante a prova, procure sempre pelas palavras-chave do enunciado.
 
@@ -407,7 +407,7 @@ Muitas questões são resolvidas apenas identificando essas palavras-chave.
 
 ---
 
-## 🧭 Navegação de Conteúdos
+### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
 * [⬅️ Lab: Explorando a Infraestrutura Global da AWS](09-lab-explorando-infraestrutura-global.md)
 

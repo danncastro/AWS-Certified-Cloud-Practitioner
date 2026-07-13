@@ -16,6 +16,8 @@ O conceito aqui é simples:
 
 Como a AWS agrega o uso de centenas de milhares de clientes (desde a startup da garagem até a Netflix), ela consegue comprar hardware, energia e rede em volumes colossais que nenhuma empresa sozinha conseguiria.
 
+---
+
 ### O resultado disso?
 
 - A AWS consegue um custo unitário de infraestrutura absurdamente baixo.
@@ -40,9 +42,11 @@ Na TI tradicional, se você precisasse testar uma ideia nova, teria que:
 
 > Na nuvem isso muda completamente. 
 
+---
+
 ### Com a Agilidade da AWS você pode:
 
-### 🚀 Experimentar rápido
+#### 🚀 Experimentar rápido
 
 Provisionar recursos de computação e armazenamento em minutos.
 
@@ -50,7 +54,9 @@ Quer testar um banco de dados novo?
 
 > Sobe agora.
 
-### 💥 Falhar rápido
+---
+
+#### 💥 Falhar rápido
 
 Se a ideia não deu certo:
 
@@ -59,7 +65,9 @@ Se a ideia não deu certo:
 
 O custo do erro passa a ser praticamente insignificante.
 
-### ⚡ Melhorar o *Time-to-market*
+---
+
+#### ⚡ Melhorar o *Time-to-market*
 
 O tempo entre:
 
@@ -75,15 +83,17 @@ para
 
 ---
 
-# 3. Ir Global em Minutos (*Go global in minutes*)
+## 3. Ir Global em Minutos (*Go global in minutes*)
 
 Esse é um dos benefícios mais poderosos da AWS.
 
 Com alguns cliques (ou uma linha de comando), você consegue implantar sua aplicação em várias **Regiões AWS** espalhadas pelo mundo.
 
-## Benefícios
+---
 
-### 🌎 Baixa Latência
+### Benefícios
+
+#### 🌎 Baixa Latência
 
 Você coloca seus serviços próximos dos usuários.
 
@@ -97,7 +107,9 @@ Resultado:
 - menor tempo de resposta;
 - melhor desempenho.
 
-### 😊 Melhor experiência do usuário
+---
+
+#### 😊 Melhor experiência do usuário
 
 Menor atraso na rede significa:
 

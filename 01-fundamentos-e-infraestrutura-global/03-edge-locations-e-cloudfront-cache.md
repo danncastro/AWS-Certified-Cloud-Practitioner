@@ -26,6 +26,8 @@ Seu objetivo principal é:
 
 Imagine um cache localizado praticamente "na esquina" da casa do usuário.
 
+---
+
 ### O que NÃO roda em uma Edge Location?
 
 Você **não** cria recursos como:
@@ -61,6 +63,8 @@ O CloudFront é capaz de acelerar a entrega de:
 
 > Tudo isso com menor latência.
 
+---
+
 ### Como funciona?
 
 Quando você configura o CloudFront, cria uma:
@@ -82,6 +86,8 @@ Imagine que um usuário solicita o arquivo:
 ```text
 logo.png
 ```
+
+---
 
 ### Primeira Requisição (*Cache Miss*)
 
@@ -116,6 +122,8 @@ flowchart TD
     class E edge;
 ```
 
+---
+
 ### Próximas Requisições (*Cache Hit*)
 
 Outro usuário solicita o mesmo arquivo.
@@ -129,6 +137,8 @@ Agora:
 Esse cenário chama-se:
 
 > **Cache Hit**
+
+---
 
 ### Fluxo Simplificado
 
@@ -160,15 +170,17 @@ flowchart TD
 
 ---
 
-## Benefícios do CloudFront
+### Benefícios do CloudFront
 
-### ⚡ Baixa Latência
+#### ⚡ Baixa Latência
 
 O conteúdo fica muito mais próximo do usuário.
 
 Em vez de atravessar continentes, os dados percorrem apenas alguns quilômetros.
 
-### 💰 Economia de Banda
+---
+
+#### 💰 Economia de Banda
 
 A origem deixa de responder todas as requisições.
 
@@ -178,8 +190,9 @@ Consequências:
 - menor custo com transferência de dados;
 - melhor utilização da infraestrutura.
 
+---
 
-### 🚀 Redução de Carga
+#### 🚀 Redução de Carga
 
 Como boa parte das respostas vem do cache, o backend trabalha muito menos.
 

@@ -14,6 +14,8 @@ Em vez de ler o enunciado de cima para baixo como se fosse um livro, você vai l
 
 3. **Elimine os Absurdos:** Antes de procurar a alternativa certa, mate as que violam as restrições ou que usam serviços que nem existem ou não fazem sentido naquela categoria.
 
+---
+
 ### Fluxo de Decisão na Leitura
 
 * **Passo 1:** Ler o comando final da questão.
@@ -22,6 +24,8 @@ Em vez de ler o enunciado de cima para baixo como se fosse um livro, você vai l
 * **Passo 4:** Caçar restrições de tempo/arquitetura no texto.
 * **Passo 5:** Eliminar incorretas e marcar a vencedora.
 
+---
+
 ### 🕵️‍♂️ Método 1: O Rastreador de "Palavras-Chave"
 Todo enunciado tem uma palavra que decide a resposta. Grife mentalmente:
 - **"Menor esforço operacional" / "Managed first":** Elimine EC2. Pense em Lambda, Fargate ou RDS.
@@ -29,16 +33,22 @@ Todo enunciado tem uma palavra que decide a resposta. Grife mentalmente:
 - **"Auditoria / Quem fez o quê":** A resposta é **CloudTrail**.
 - **"Acesso temporário / Sem chaves fixas":** A resposta é **IAM Role**.
 
+---
+
 ### ✂️ Método 2: A Técnica da Eliminação por Absurdo
 AWS nunca vai sugerir algo que fira as boas práticas do Well-Architected. Elimine de cara:
 - Alternativas que sugerem usar a **Conta Root** para tarefas diárias.
 - Alternativas que sugerem abrir a porta **0.0.0.0/0** para o mundo por "facilidade".
 - Alternativas que sugerem armazenar senhas em arquivos de texto ou código.
 
+---
+
 ### 🚩 Método 3: Fuja das Pegadinhas de Tradução
 A prova em português às vezes traduz termos técnicos de forma estranha. 
 - Se ficar confuso, alterne para o **Inglês** no botão do exame. 
 - Exemplo clássico: "Local" pode significar *On-premises* (seu data center) ou *Edge Location*. O contexto da frase vai te dizer se é sobre hardware físico antigo ou cache global.
+
+---
 
 ### ⏱️ O Método das 3 Passadas
 1. **Primeira Passada (Verde):** Responda as óbvias (10-15 segundos). Ganhe moral e tempo.
@@ -46,6 +56,8 @@ A prova em português às vezes traduz termos técnicos de forma estranha.
 2. **Segunda Passada (Amarela):** Ataque as de cenário que exigem pensar um pouco. Marque para revisão as que gerarem dúvida entre duas opções.
 
 3. **Terceira Passada (Vermelha):** Use o tempo restante para as difíceis e revisões. **Nunca deixe em branco**, não há penalidade por chute.
+
+---
 
 ## 2. Palavras de Comando: O Limiar de Decisão
 
@@ -68,6 +80,8 @@ A AWS usa termos específicos que são gatilhos para a resposta certa. Se você 
 > 
 > * **Técnica:** O comando pede **custo**. A restrição de tempo é "12 horas de tolerância" e o acesso é raro.
 > * **Decisão:** *S3 Standard* é caro demais. *S3 Glacier Instant Retrieval* é rápido demais (recuperação em milissegundos) e cobra mais por isso. A resposta correta obrigatoriamente será **Amazon S3 Glacier Deep Archive** (suporta até 12 horas e é o mais barato da AWS).
+
+---
 
 ### ⚙️ Cenário B: Foco em Operação (*Least Operational Overhead*)
 > **Enunciado:** *"Um desenvolvedor precisa executar um script Python simples sempre que um arquivo novo é carregado no Amazon S3. Ele quer a solução com least operational overhead."*

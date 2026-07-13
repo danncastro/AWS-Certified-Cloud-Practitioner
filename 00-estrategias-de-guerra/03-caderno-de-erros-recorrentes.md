@@ -36,6 +36,8 @@ Aqui estão dois erros clássicos que muita gente comete na trilha de Cloud Prac
 *   **O Motivo Técnico do Erro:** Achei que o Business já era "top de linha" o suficiente para ter um gerente. Na real, o Business tem acesso 24/7 a engenheiros, mas o TAM designado (um humano dedicado para a sua conta) é exclusividade do Enterprise.
 *   **Regra de Decisão:** Leu "TAM designado" ou "Concierge Support"? A resposta é sempre Enterprise. No Business, o suporte é com um pool de engenheiros, não com uma pessoa específica.
 
+---
+
 ### ❌ Registro de Erro: SIMULADO-02-Q18
 *   **Enunciado Resumido:** Quem é o responsável por habilitar a criptografia de dados em repouso (at rest) no Amazon S3?
 *   **O que eu marquei (Incorreta):** AWS (Provedor).
