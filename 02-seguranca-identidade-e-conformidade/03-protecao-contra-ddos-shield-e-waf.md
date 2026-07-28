@@ -236,8 +236,8 @@ Mapeie esses termos em inglês para identificar a resposta certa na hora H:
 ---
 
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
-* [➡️ Criptografia: KMS vs. CloudHSM e a Regra de Ouro](03-protecao-contra-ddos-shield-e-waf.md)
+* [⬅️ Autenticação, MFA e Conta Root: Protegendo as Chaves do Reino](02-autenticacao-mfa-e-conta-root.md)
+* [➡️ Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
 
 ---
 ---

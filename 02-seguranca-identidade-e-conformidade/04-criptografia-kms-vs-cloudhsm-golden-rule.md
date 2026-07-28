@@ -51,27 +51,13 @@ Outro detalhe importante:
 ~~~mermaid
 graph LR
     A[Usuário/App] --> B{AWS KMS}
-    B --> C[S3]
-    B --> D[EBS]
-    B --> E[RDS]
+    B --> C[Amazon S3]
+    B --> D[Amazon EBS]
+    B --> E[Amazon RDS]
+    B --> F[Amazon EFS]
     subgraph "Gerenciamento AWS"
     B
     end
-~~~
-
-~~~mermaid
-flowchart LR
-
-App["Aplicação"]
-
-KMS["AWS KMS"]
-
-App --> KMS
-
-KMS --> S3["Amazon S3"]
-KMS --> EBS["Amazon EBS"]
-KMS --> RDS["Amazon RDS"]
-KMS --> EFS["Amazon EFS"]
 ~~~
 
 ### Quando usar?
