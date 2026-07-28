@@ -2,7 +2,7 @@
 
 Aqui está a arquitetura completa da sua aprovação, organizada para você escalar do zero absoluto ao nível de Arquiteto. 
 
-```markdown
+~~~markdown
 .
 ├── 00-estrategias-de-guerra/
 │   ├── 00-panorama-real-clf-c02.md
@@ -125,4 +125,4 @@ Aqui está a arquitetura completa da sua aprovação, organizada para você esca
 │   └── 04-checklist-final-de-done-aprovacao.md
 └── assets/
     └── images/
-```
+~~~

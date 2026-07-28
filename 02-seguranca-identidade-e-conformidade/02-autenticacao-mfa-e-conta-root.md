@@ -177,3 +177,6 @@ Mapeie esses termos para não cair em pegadinha:
 * [🏠 Menu Principal](../README.md)
 * [⬅️ IAM Roles e Acesso Temporário](01-iam-roles-e-acesso-temporario.md)
 * [➡️ Proteção Contra DDoS, Shield & WAF](03-protecao-contra-ddos-shield-e-waf.md)
+
+---
+---
