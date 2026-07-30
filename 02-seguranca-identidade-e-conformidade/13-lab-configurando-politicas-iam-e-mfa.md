@@ -627,7 +627,7 @@ Usuários IAM com chaves permanentes devem ser evitados quando existe uma altern
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
 * [⬅️ Mnemonico - Watch vs Trail vs Config](12-mnemonico-watch-trail-config.md)
-* [➡️ ]()
+* [➡️ Micro Simulado de Segurança](14-micro-simulado-seguranca.md)
 
 ---
 ---
