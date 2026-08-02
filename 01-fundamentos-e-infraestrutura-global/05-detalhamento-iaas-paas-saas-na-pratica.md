@@ -130,8 +130,8 @@ Sempre que a questão mencionar **Guest OS**, pense imediatamente:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Modelo de Responsabilidade Compartilhada da Nuvem](04-modelo-responsabilidade-compartilhada-da-nuvem.md)
-* [➡️ Tabela Comparativa CapEx vs OpEx](06-tabela-comparativa-capex-vs-opex.md)
+* [⬅️ Módulo 1: Modelo de Responsabilidade Compartilhada da Nuvem](04-modelo-responsabilidade-compartilhada-da-nuvem.md)
+* [➡️ Módulo 1: Tabela Comparativa CapEx vs OpEx](06-tabela-comparativa-capex-vs-opex.md)
 
 ---
 ---

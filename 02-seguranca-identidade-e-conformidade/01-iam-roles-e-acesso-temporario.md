@@ -277,8 +277,8 @@ Se você ler estes termos em inglês, a resposta é IAM Role:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ IAM: Usuários, Grupos e Policies](01-iam-roles-e-acesso-temporario.md)
-* [➡️ Autenticação, MFA e Conta root](02-autenticacao-mfa-e-conta-root.md)
+* [⬅️ Módulo 2: IAM: Usuários, Grupos e Policies](01-iam-roles-e-acesso-temporario.md)
+* [➡️ Módulo 2: Autenticação, MFA e Conta root](02-autenticacao-mfa-e-conta-root.md)
 
 ---
 ---

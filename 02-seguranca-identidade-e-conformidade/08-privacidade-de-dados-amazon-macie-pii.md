@@ -381,8 +381,8 @@ Se aparecer...
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Detecção de Ameaças: GuardDuty (ML) vs. Inspector (Vulnerabilidades)](07-deteccao-de-ameacas-guardduty-ml-vs-inspector-vuln.md)
-* [➡️ Conformidade e Relatórios: AWS Artifact](09-conformidade-e-relatorios-aws-artifact.md)
+* [⬅️ Módulo 2: Detecção de Ameaças: GuardDuty (ML) vs. Inspector (Vulnerabilidades)](07-deteccao-de-ameacas-guardduty-ml-vs-inspector-vuln.md)
+* [➡️ Módulo 2: Conformidade e Relatórios: AWS Artifact](09-conformidade-e-relatorios-aws-artifact.md)
 
 ---
 ---

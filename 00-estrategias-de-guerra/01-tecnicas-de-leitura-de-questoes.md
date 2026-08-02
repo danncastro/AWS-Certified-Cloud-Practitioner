@@ -109,8 +109,8 @@ Mapeie esses termos para identificar a resposta correta instantaneamente, ignora
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Panorama Real: AWS Certified Cloud Practitioner (CLF-C02)](00-panorama-real-clf-c02.md)
-* [➡️ Método para Eliminação de Alternativas](02-metodo-de-eliminacao-de-alternativas.md)
+* [⬅️ Módulo 0: Panorama Real: AWS Certified Cloud Practitioner (CLF-C02)](00-panorama-real-clf-c02.md)
+* [➡️ Módulo 0: Método para Eliminação de Alternativas](02-metodo-de-eliminacao-de-alternativas.md)
 
 ---
 ---

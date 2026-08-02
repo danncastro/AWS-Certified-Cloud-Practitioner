@@ -71,8 +71,8 @@ Para cada alternativa na hora da prova, faça o seguinte *check* mental rápido:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Tecnicas de Leitura de Questões](01-tecnicas-de-leitura-de-questoes.md)
-* [➡️ Caderno de Erros Recorrentes](03-caderno-de-erros-recorrentes.md)
+* [⬅️ Módulo 0: Tecnicas de Leitura de Questões](01-tecnicas-de-leitura-de-questoes.md)
+* [➡️ Módulo 0: Caderno de Erros Recorrentes](03-caderno-de-erros-recorrentes.md)
 
 ---
 ---

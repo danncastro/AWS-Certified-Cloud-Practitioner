@@ -191,8 +191,8 @@ Essa elasticidade financeira reduz riscos e melhora o fluxo de caixa da empresa,
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Detalhamento IaaS, PaaS e SaaS na Prática](05-detalhamento-iaas-paas-saas-na-pratica.md)
-* [➡️ Modelos de Implantação e AWS Well-Architected Framework](07-modelos-de-implantacao-e-framework-aws.md)
+* [⬅️ Módulo 1: Detalhamento IaaS, PaaS e SaaS na Prática](05-detalhamento-iaas-paas-saas-na-pratica.md)
+* [➡️ Módulo 1: Modelos de Implantação e AWS Well-Architected Framework](07-modelos-de-implantacao-e-framework-aws.md)
 
 ---
 ---

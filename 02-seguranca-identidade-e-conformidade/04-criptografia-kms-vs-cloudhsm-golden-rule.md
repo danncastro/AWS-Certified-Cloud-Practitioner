@@ -176,8 +176,8 @@ Associe estes termos às soluções corretas.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Proteção contra DDoS: AWS Shield e AWS WAF](03-protecao-contra-ddos-shield-e-waf.md)
-* [➡️ Gestão de Segredos: Secrets Manager vs. Parameter Store](05-gestao-de-segredos-secrets-manager-vs-parameter-store.md)
+* [⬅️ Módulo 2: Proteção contra DDoS: AWS Shield e AWS WAF](03-protecao-contra-ddos-shield-e-waf.md)
+* [➡️ Módulo 2: Gestão de Segredos: Secrets Manager vs. Parameter Store](05-gestao-de-segredos-secrets-manager-vs-parameter-store.md)
 
 ---
 ---

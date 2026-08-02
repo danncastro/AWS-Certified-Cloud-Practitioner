@@ -409,7 +409,7 @@ Muitas questões são resolvidas apenas identificando essas palavras-chave.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Lab: Explorando a Infraestrutura Global da AWS](09-lab-explorando-infraestrutura-global.md)
-* [➡️ IAM: Usuários, Grupos e Policies](../02-seguranca-identidade-e-conformidade/00-iam-usuarios-grupos-e-policies.md)
+* [⬅️ Módulo 1: Lab: Explorando a Infraestrutura Global da AWS](09-lab-explorando-infraestrutura-global.md)
+* [➡️ Módulo 2: IAM: Usuários, Grupos e Policies](../02-seguranca-identidade-e-conformidade/00-iam-usuarios-grupos-e-policies.md)
 ---
 ---

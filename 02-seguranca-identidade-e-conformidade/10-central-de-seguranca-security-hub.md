@@ -268,8 +268,8 @@ Se aparecer...
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Conformidade e Relatórios: AWS Artifact](09-conformidade-e-relatorios-aws-artifact.md)
-* [➡️ Tabela IAM User vs Group vs Role](11-tabela-iam-user-vs-group-vs-role.md)
+* [⬅️ Módulo 2: Conformidade e Relatórios: AWS Artifact](09-conformidade-e-relatorios-aws-artifact.md)
+* [➡️ Módulo 2: Tabela IAM User vs Group vs Role](11-tabela-iam-user-vs-group-vs-role.md)
 
 ---
 ---

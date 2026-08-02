@@ -307,8 +307,8 @@ Se aparecer...
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Central de segurança (Security Hub)](10-central-de-seguranca-security-hub.md)
-* [➡️ Mnemonico - Watch vs Trail vs Config](12-mnemonico-watch-trail-config.md)
+* [⬅️ Módulo 2: Central de segurança (Security Hub)](10-central-de-seguranca-security-hub.md)
+* [➡️ Módulo 2: Mnemonico - Watch vs Trail vs Config](12-mnemonico-watch-trail-config.md)
 
 ---
 ---

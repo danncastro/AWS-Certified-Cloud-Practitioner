@@ -149,8 +149,8 @@ Essa economia é parcialmente repassada aos clientes por meio de preços menores
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ O que é Computação em Nuvem?](00-o-que-e-cloud-computing.md)
-* [➡️ Infraestrutura Global: Regiões e AZs](02-infraestrutura-global-regioes-e-azs.md)
+* [⬅️ Módulo 1: O que é Computação em Nuvem?](00-o-que-e-cloud-computing.md)
+* [➡️ Módulo 1: Infraestrutura Global: Regiões e AZs](02-infraestrutura-global-regioes-e-azs.md)
 
 ---
 ---

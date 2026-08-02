@@ -124,8 +124,8 @@ Se aparecer estes termos no enunciado, normalmente a resposta será:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Síntese IAM: User vs. Group vs. Role](11-tabela-iam-user-vs-group-vs-role.md)
-* [➡️ Lab: Configurando Políticas IAM e MFA](13-lab-configurando-politicas-iam-e-mfa.md)
+* [⬅️ Módulo 2: Síntese IAM: User vs. Group vs. Role](11-tabela-iam-user-vs-group-vs-role.md)
+* [➡️ Módulo 2: Lab: Configurando Políticas IAM e MFA](13-lab-configurando-politicas-iam-e-mfa.md)
 
 ---
 ---

@@ -193,8 +193,8 @@ Ao concluir este laboratório, confirme se você conseguiu:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Mnemônicos e Revisão: Fundamentos e Infraestrutura Global](08-mnemonicos-fundamentos.md)
-* [➡️ Micro-Simulado: Fundamentos e Infraestrutura Global](10-micro-simulado-fundamentos.md)
+* [⬅️ Módulo 1: Mnemônicos e Revisão: Fundamentos e Infraestrutura Global](08-mnemonicos-fundamentos.md)
+* [➡️ Módulo 1: Micro-Simulado: Fundamentos e Infraestrutura Global](10-micro-simulado-fundamentos.md)
 
 ---
 ---

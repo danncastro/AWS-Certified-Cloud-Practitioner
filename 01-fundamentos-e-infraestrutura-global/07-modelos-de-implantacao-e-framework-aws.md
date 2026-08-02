@@ -131,8 +131,8 @@ Ela ajuda arquitetos e equipes a identificar riscos, aplicar boas práticas e ev
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Tabela Comparativa CapEx vs OpEx](06-tabela-comparativa-capex-vs-opex.md)
-* [➡️ Mnemônicos e Revisão: Fundamentos e Infraestrutura Global](08-mnemonicos-fundamentos.md)
+* [⬅️ Módulo 1: Tabela Comparativa CapEx vs OpEx](06-tabela-comparativa-capex-vs-opex.md)
+* [➡️ Módulo 1: Mnemônicos e Revisão: Fundamentos e Infraestrutura Global](08-mnemonicos-fundamentos.md)
 
 ---
 ---

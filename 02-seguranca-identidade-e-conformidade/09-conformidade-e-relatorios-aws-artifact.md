@@ -351,8 +351,8 @@ Se aparecer...
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Privacidade de Dados: Amazon Macie e Proteção de PII](08-privacidade-de-dados-amazon-macie-pii.md)
-* [➡️ Central de segurança (Security Hub)](10-central-de-seguranca-security-hub.md)
+* [⬅️ Módulo 2: Privacidade de Dados: Amazon Macie e Proteção de PII](08-privacidade-de-dados-amazon-macie-pii.md)
+* [➡️ Módulo 2: Central de segurança (Security Hub)](10-central-de-seguranca-security-hub.md)
 
 ---
 ---

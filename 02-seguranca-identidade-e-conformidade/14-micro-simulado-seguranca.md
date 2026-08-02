@@ -1,133 +1,210 @@
 # Micro-Simulado: Segurança, Identidade e Conformidade
 
-O domínio de segurança é um dos mais pesados da prova CLF-C02. A AWS quer ter certeza de que você não vai ser o dev que deixa a chave do cofre pendurada na maçaneta. Este simulado foca nos "duelos" de serviços que a banca adora usar para te confundir. 
+O domínio de **Segurança** é um dos mais importantes da prova CLF-C02. A AWS espera que você saiba identificar o serviço correto para cada cenário, principalmente quando as alternativas parecem muito parecidas.
 
-Resolva as questões abaixo e sinta se o seu mindset de segurança está afiado.
+Bora validar se esses conceitos já estão na ponta da língua.
 
 ---
 
 ## Questões
 
-### 1. Uma aplicação rodando em uma instância Amazon EC2 precisa acessar arquivos dentro de um bucket do Amazon S3. Seguindo as melhores práticas de segurança, qual método deve ser usado para fornecer esse acesso?
-A) Criar um **IAM User** e salvar as **Access Keys** no código-fonte da aplicação.
-B) Anexar uma **IAM Role** com permissões adequadas à instância EC2.
-C) Habilitar o acesso de leitura pública na **Bucket Policy** do S3.
-D) Usar a conta **Root** da AWS para executar a aplicação no EC2.
+### 1. Uma aplicação executando em uma instância Amazon EC2 precisa acessar objetos armazenados em um bucket Amazon S3. Seguindo as melhores práticas de segurança, qual abordagem deve ser utilizada?
 
-**Gabarito Comentado:**
-*   **Correta: B.** O uso de **IAM Roles** fornece credenciais temporárias para o serviço (EC2), eliminando o risco de chaves fixas vazarem. É o padrão ouro de segurança.
-*   **Incorreta A:** Salvar chaves no código (hardcoded) é um erro grave de segurança.
-*   **Incorreta C:** Tornar o bucket público expõe dados para toda a internet, violando o privilégio mínimo.
-*   **Incorreta D:** Nunca use a conta Root para tarefas diárias ou aplicações.
+A) Criar um **IAM User** e armazenar as **Access Keys** no código da aplicação.
+
+B) Anexar uma **IAM Role** com as permissões necessárias à instância EC2.
+
+C) Tornar o bucket público por meio da **Bucket Policy**.
+
+D) Executar a aplicação utilizando a conta **Root** da AWS.
+
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **B.** A **IAM Role** fornece credenciais temporárias para a instância EC2, eliminando o uso de chaves fixas e seguindo o princípio do menor privilégio.
+
+**❌ Incorreta A:** Nunca armazene Access Keys no código da aplicação.
+
+**❌ Incorreta C:** Tornar o bucket público expõe os dados desnecessariamente.
+
+**❌ Incorreta D:** A conta Root nunca deve ser utilizada por aplicações.
+
+</details>
 
 ---
 
-### 2. Um arquiteto de soluções precisa proteger uma aplicação web contra ataques massivos de negação de serviço distribuída (DDoS). Além disso, ele quer ter acesso a um time de resposta especializado (DRT) durante ataques ativos. Qual serviço deve ser contratado?
+### 2. Um arquiteto precisa proteger uma aplicação web contra ataques DDoS e deseja contar com suporte especializado durante ataques ativos. Qual serviço atende esse requisito?
+
 A) AWS WAF.
+
 B) AWS Shield Standard.
+
 C) AWS Shield Advanced.
+
 D) Amazon GuardDuty.
 
-**Gabarito Comentado:**
-*   **Correta: C.** O **Shield Advanced** é a versão paga que oferece mitigação robusta contra DDoS e o benefício exclusivo de suporte do **DDoS Response Team (DRT)**.
-*   **Incorreta A:** O WAF é um firewall de aplicação (Layer 7) que filtra tráfego (SQL Injection), mas não é o serviço primário contra DDoS volumétrico.
-*   **Incorreta B:** O Shield Standard é gratuito e automático, mas não oferece o suporte do time DRT nem proteção financeira.
-*   **Incorreta D:** O GuardDuty apenas detecta ameaças, ele não mitiga ataques DDoS.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **C.** O **AWS Shield Advanced** oferece proteção avançada contra ataques DDoS e acesso ao **DDoS Response Team (DRT)**.
+
+**❌ Incorreta A:** O WAF protege aplicações web (Camada 7), mas não substitui o Shield contra ataques DDoS volumétricos.
+
+**❌ Incorreta B:** O Shield Standard fornece proteção básica, porém não inclui o DRT.
+
+**❌ Incorreta D:** O GuardDuty detecta ameaças, mas não mitiga ataques DDoS.
+
+</details>
 
 ---
 
-### 3. Após um incidente de segurança, o time de auditoria da empresa precisa descobrir "quem" deletou uma instância EC2 crítica, "quando" isso aconteceu e de qual "endereço IP" veio a requisição. Qual serviço fornece esse histórico de chamadas de API?
+### 3. Após um incidente de segurança, a equipe precisa descobrir quem excluiu uma instância EC2, quando isso ocorreu e de qual endereço IP partiu a requisição. Qual serviço fornece esse histórico?
+
 A) Amazon CloudWatch.
+
 B) AWS CloudTrail.
+
 C) AWS Config.
+
 D) Amazon Inspector.
 
-**Gabarito Comentado:**
-*   **Correta: B.** O **CloudTrail** é o serviço de auditoria. Ele registra o "quem, o quê, quando e de onde" de todas as chamadas de API feitas na conta.
-*   **Incorreta A:** O CloudWatch foca em performance (CPU, logs de app), não em rastreio de ações de usuários/API.
-*   **Incorreta C:** O Config foca no histórico de configuração do recurso (como ele mudou), não em quem apertou o botão na API.
-*   **Incorreta D:** O Inspector caça vulnerabilidades em softwares instalados.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **B.** O **AWS CloudTrail** registra todas as chamadas de API, incluindo usuário, horário, endereço IP e ação executada.
+
+**❌ Incorreta A:** O CloudWatch monitora métricas e logs, não auditoria de APIs.
+
+**❌ Incorreta C:** O AWS Config registra alterações na configuração dos recursos.
+
+**❌ Incorreta D:** O Inspector identifica vulnerabilidades.
+
+</details>
 
 ---
 
-### 4. Uma startup quer automatizar a busca por vulnerabilidades de software e portas abertas não intencionais em suas instâncias EC2 e imagens de contêiner no Amazon ECR. Qual serviço realiza esse escaneamento preventivo?
+### 4. Uma startup deseja identificar automaticamente vulnerabilidades de software e portas abertas em instâncias EC2 e imagens armazenadas no Amazon ECR. Qual serviço realiza esse trabalho?
+
 A) Amazon GuardDuty.
+
 B) Amazon Inspector.
+
 C) AWS WAF.
+
 D) Amazon Macie.
 
-**Gabarito Comentado:**
-*   **Correta: B.** O **Inspector** é focado em gerenciamento de vulnerabilidades (CVEs) e acessibilidade de rede no EC2 e ECR.
-*   **Incorreta A:** O GuardDuty usa ML para detectar ameaças ativas (ex: mineração de cripto), não é um scanner de vulnerabilidades de pacotes.
-*   **Incorreta C:** O WAF filtra tráfego web, ele não olha para dentro do servidor em busca de patches desatualizados.
-*   **Incorreta D:** O Macie é exclusivo para caçar dados sensíveis (PII) no S3.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **B.** O **Amazon Inspector** realiza avaliações automáticas de vulnerabilidades e exposição de rede em EC2 e imagens do ECR.
+
+**❌ Incorreta A:** O GuardDuty detecta atividades suspeitas, não vulnerabilidades de software.
+
+**❌ Incorreta C:** O WAF protege aplicações web.
+
+**❌ Incorreta D:** O Macie identifica dados sensíveis no Amazon S3.
+
+</details>
 
 ---
 
-### 5. Um banco digital precisa garantir que nenhum bucket do Amazon S3 contenha informações de identificação pessoal (PII), como números de CPF ou cartões de crédito, expostos sem criptografia. Qual serviço automatiza essa descoberta usando Machine Learning?
+### 5. Um banco digital deseja identificar automaticamente informações sensíveis (PII), como CPF e números de cartão de crédito, armazenadas em buckets Amazon S3. Qual serviço deve ser utilizado?
+
 A) Amazon Macie.
+
 B) Amazon GuardDuty.
+
 C) AWS KMS.
+
 D) AWS Artifact.
 
-**Gabarito Comentado:**
-*   **Correta: A.** O **Amazon Macie** é o especialista em privacidade de dados no S3, classificando e protegendo **PII**.
-*   **Incorreta B:** O GuardDuty monitora comportamentos maliciosos na conta, não o conteúdo de arquivos no S3.
-*   **Incorreta C:** O KMS gerencia chaves de criptografia, mas não "lê" o dado para saber se é um CPF.
-*   **Incorreta D:** O Artifact é apenas um portal para baixar PDFs de relatórios de auditoria.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **A.** O **Amazon Macie** utiliza Machine Learning para descobrir, classificar e proteger dados sensíveis armazenados no Amazon S3.
+
+**❌ Incorreta B:** O GuardDuty monitora ameaças e comportamentos suspeitos.
+
+**❌ Incorreta C:** O KMS gerencia chaves de criptografia, mas não identifica PII.
+
+**❌ Incorreta D:** O Artifact fornece documentos de conformidade.
+
+</details>
 
 ---
 
-### 6. Um auditor de conformidade externa solicitou o relatório SOC 2 e a certificação ISO da infraestrutura física da AWS para validar o compliance da empresa. Onde o usuário pode baixar esses documentos sob demanda?
+### 6. Um auditor solicitou os relatórios SOC e ISO da infraestrutura da AWS para validar requisitos de conformidade. Onde esses documentos podem ser obtidos?
+
 A) AWS CloudTrail.
+
 B) AWS Trusted Advisor.
+
 C) AWS Artifact.
+
 D) AWS Secrets Manager.
 
-**Gabarito Comentado:**
-*   **Correta: C.** O **AWS Artifact** é o portal de autoatendimento para documentos de conformidade, relatórios de auditoria de terceiros e acordos legais.
-*   **Incorreta A:** O CloudTrail registra logs de API, não fornece certificados ISO.
-*   **Incorreta B:** O Trusted Advisor dá recomendações de otimização, não relatórios de conformidade regulatória.
-*   **Incorreta D:** O Secrets Manager guarda senhas, não documentos de auditoria.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **C.** O **AWS Artifact** disponibiliza relatórios de auditoria, certificações e acordos de conformidade.
+
+**❌ Incorreta A:** O CloudTrail registra eventos de API.
+
+**❌ Incorreta B:** O Trusted Advisor fornece recomendações de boas práticas.
+
+**❌ Incorreta D:** O Secrets Manager armazena segredos.
+
+</details>
 
 ---
 
-### 7. Uma empresa quer aumentar a segurança de seu banco de dados Amazon RDS trocando a senha de acesso a cada 30 dias de forma automática, sem intervenção manual. Qual serviço suporta essa rotação nativa?
+### 7. Uma empresa deseja rotacionar automaticamente a senha de um banco Amazon RDS a cada 30 dias, sem intervenção manual. Qual serviço oferece esse recurso?
+
 A) AWS Systems Manager Parameter Store.
+
 B) AWS Secrets Manager.
+
 C) AWS KMS.
+
 D) Amazon CloudWatch.
 
-**Gabarito Comentado:**
-*   **Correta: B.** O **Secrets Manager** tem como principal diferencial a **rotação automática de segredos**, integrando-se nativamente com o RDS via Lambda.
-*   **Incorreta A:** O Parameter Store armazena configurações e segredos simples (SecureString), mas não possui a funcionalidade de rotação automática nativa.
-*   **Incorreta C:** O KMS criptografa os dados, mas não gerencia a lógica de troca da senha no banco de dados.
-*   **Incorreta D:** O CloudWatch apenas monitoraria se houvesse erro de login, mas não trocaria a senha.
+<details>
+<summary><strong>💡 Gabarito Comentado</strong></summary>
+
+**✅ Correta:** **B.** O **AWS Secrets Manager** oferece rotação automática de segredos e integração nativa com o Amazon RDS.
+
+**❌ Incorreta A:** O Parameter Store armazena parâmetros e segredos, mas não possui rotação automática nativa.
+
+**❌ Incorreta C:** O KMS gerencia chaves de criptografia, não a troca de senhas.
+
+**❌ Incorreta D:** O CloudWatch monitora recursos, mas não gerencia credenciais.
+
+</details>
 
 ---
 
 ## 🎯 Gatilho de Exame
 
-Mano, para não errar nunca mais, decore estas associações de 1 segundo:
+Associe rapidamente cada cenário ao serviço correspondente:
 
-*   **"Quem deletou o recurso?"** ➔ **CloudTrail**.
-*   **"Dados sensíveis / PII no S3"** ➔ **Amazon Macie**.
-*   **"Troca automática de senha (RDS)"** ➔ **Secrets Manager**.
-*   **"Baixar relatório SOC/ISO/PCI"** ➔ **AWS Artifact**.
-*   **"Vulnerabilidades / CVE / Portas abertas"** ➔ **Amazon Inspector**.
-*   **"Mineração de cripto / Comportamento anômalo / ML"** ➔ **Amazon GuardDuty**.
-*   **"Acesso do EC2 ao S3 sem chaves"** ➔ **IAM Role**.
-*   **"Ataque DDoS / DRT Team"** ➔ **Shield Advanced**.
-*   **"SQL Injection / Camada 7 / Bloqueio de IP"** ➔ **AWS WAF**.
+- **Quem realizou uma ação na conta?** → **AWS CloudTrail**
+- **Dados sensíveis (PII) no Amazon S3** → **Amazon Macie**
+- **Rotação automática de senhas e segredos** → **AWS Secrets Manager**
+- **Relatórios SOC, ISO e PCI DSS** → **AWS Artifact**
+- **Vulnerabilidades, CVEs e exposição de rede** → **Amazon Inspector**
+- **Detecção de ameaças e comportamento suspeito** → **Amazon GuardDuty**
+- **Acesso do EC2 ao S3 sem Access Keys** → **IAM Role**
+- **Proteção avançada contra DDoS + DRT** → **AWS Shield Advanced**
+- **Proteção contra SQL Injection, XSS e regras HTTP** → **AWS WAF**
 
-Se o enunciado falar em **"Menor Esforço Operacional"** para conformidade, sempre procure pelo serviço **Gerenciado** que resolve o problema (ex: Secrets Manager em vez de script manual). Marcha!
+> **Sinal de Alerta:** Se o enunciado mencionar **"quem fez a ação"**, pense imediatamente em **CloudTrail**. Se falar em **"o recurso está vulnerável"**, pense em **Inspector**. Se falar em **"atividade suspeita acontecendo agora"**, pense em **GuardDuty**.
 
 ---
 
 ### 🧭 Navegação de Conteúdos
-* [🏠 Menu Principal](../README.md)
-* [⬅️ Lab: Configurando Políticas IAM e MFA](13-lab-configurando-politicas-iam-e-mfa.md)
-* [➡️ Modulo3]()
 
----
+- [🏠 Menu Principal](../README.md)
+- [⬅️ Módulo 2: Lab: Configurando Políticas IAM e MFA](13-lab-configurando-politicas-iam-e-mfa.md)
+- [➡️ Módulo 3: Amazon EC2 - Instâncias Virtuais na Prática](../03-computacao-e-containers/00-ec2-instancias-virtuais.md)
+
 ---

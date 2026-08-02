@@ -374,8 +374,8 @@ Se aparecer... use esses gatilhos rapidos:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Auditoria e Logs: AWS CloudTrail (Quem fez o quê?)](06-auditoria-e-logs-cloudtrail-quem-fez-o-que.md)
-* [➡️ Privacidade de Dados: Amazon Macie e Proteção de PII](08-privacidade-de-dados-amazon-macie-pii.md)
+* [⬅️ Módulo 2: Auditoria e Logs: AWS CloudTrail (Quem fez o quê?)](06-auditoria-e-logs-cloudtrail-quem-fez-o-que.md)
+* [➡️ Módulo 2: Privacidade de Dados: Amazon Macie e Proteção de PII](08-privacidade-de-dados-amazon-macie-pii.md)
 
 ---
 ---

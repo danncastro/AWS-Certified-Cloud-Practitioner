@@ -273,8 +273,8 @@ Para uploads grandes realizados por usuários distribuídos globalmente, isso po
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Infraestrutura Global: Regiões e AZs](02-infraestrutura-global-regioes-e-azs.md)
-* [➡️ Modelo de Responsabilidade Compartilhada da Nuvem](04-modelo-responsabilidade-compartilhada-da-nuvem.md)
+* [⬅️ Módulo 1: Infraestrutura Global: Regiões e AZs](02-infraestrutura-global-regioes-e-azs.md)
+* [➡️ Módulo 1: Modelo de Responsabilidade Compartilhada da Nuvem](04-modelo-responsabilidade-compartilhada-da-nuvem.md)
 
 ---
 ---

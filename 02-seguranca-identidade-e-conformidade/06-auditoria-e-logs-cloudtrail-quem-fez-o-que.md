@@ -210,8 +210,8 @@ Essa associação resolve boa parte das questões da certificação.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Gestão de Segredos: Secrets Manager vs. Parameter Store](05-gestao-de-segredos-secrets-manager-vs-parameter-store.md)
-* [➡️ Detecção de Ameaças: GuardDuty (ML) vs. Inspector (Vulnerabilidades)](07-deteccao-de-ameacas-guardduty-ml-vs-inspector-vuln.md)
+* [⬅️ Módulo 2: Gestão de Segredos: Secrets Manager vs. Parameter Store](05-gestao-de-segredos-secrets-manager-vs-parameter-store.md)
+* [➡️ Módulo 2: Detecção de Ameaças: GuardDuty (ML) vs. Inspector (Vulnerabilidades)](07-deteccao-de-ameacas-guardduty-ml-vs-inspector-vuln.md)
 
 ---
 ---

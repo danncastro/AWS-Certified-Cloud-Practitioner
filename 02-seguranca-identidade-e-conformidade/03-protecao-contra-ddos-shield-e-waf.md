@@ -237,8 +237,8 @@ Mapeie esses termos em inglês para identificar a resposta certa na hora H:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Autenticação, MFA e Conta Root: Protegendo as Chaves do Reino](02-autenticacao-mfa-e-conta-root.md)
-* [➡️ Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
+* [⬅️ Módulo 2: Autenticação, MFA e Conta Root: Protegendo as Chaves do Reino](02-autenticacao-mfa-e-conta-root.md)
+* [➡️ Módulo 2: Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
 
 ---
 ---

@@ -193,8 +193,8 @@ Se esses termos aparecerem no enunciado, você já sabe para onde olhar:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Micro-Simulado: Fundamentos e Infraestrutura Global](../01-fundamentos-e-infraestrutura-global/10-micro-simulado-fundamentos.md)
-* [➡️ IAM Roles e Acesso Temporário](01-iam-roles-e-acesso-temporario.md)
+* [⬅️ Módulo 1: Micro-Simulado: Fundamentos e Infraestrutura Global](../01-fundamentos-e-infraestrutura-global/10-micro-simulado-fundamentos.md)
+* [➡️ Módulo 2: IAM Roles e Acesso Temporário](01-iam-roles-e-acesso-temporario.md)
 
 ---
 ---

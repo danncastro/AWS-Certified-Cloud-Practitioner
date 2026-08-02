@@ -63,8 +63,8 @@ Mano, não deixe para ler o caderno de erros uma vez por mês. A estratégia de 
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Método para Eliminação de Alternativas](02-metodo-de-eliminacao-de-alternativas.md)
-* [➡️ Gatilhos Visuais PT-EN](04-gatilhos-visuais-pt-en.md)
+* [⬅️ Módulo 0: Método para Eliminação de Alternativas](02-metodo-de-eliminacao-de-alternativas.md)
+* [➡️ Módulo 0: Gatilhos Visuais PT-EN](04-gatilhos-visuais-pt-en.md)
 
 
 ---

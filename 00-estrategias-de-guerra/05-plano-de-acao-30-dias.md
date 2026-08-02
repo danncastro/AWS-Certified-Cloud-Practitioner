@@ -40,8 +40,8 @@ Este plano foi desenhado para quem tem vida social, boleto para pagar e pouco te
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Gatilhos Visuais PT-EN](04-gatilhos-visuais-pt-en.md)
-* [➡️ O que é Computação em Nuvem?](../01-fundamentos-e-infraestrutura-global/00-o-que-e-cloud-computing.md)
+* [⬅️ Módulo 0: Gatilhos Visuais PT-EN](04-gatilhos-visuais-pt-en.md)
+* [➡️ Módulo 1: O que é Computação em Nuvem?](../01-fundamentos-e-infraestrutura-global/00-o-que-e-cloud-computing.md)
 
 ---
 ---

@@ -130,8 +130,8 @@ Se mencionar **hardware, data centers, rede global ou infraestrutura física**, 
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Edge Locations e Amazon CloudFront](03-edge-locations-e-cloudfront-cache.md)
-* [➡️ Detalhamento IaaS, PaaS e SaaS na Prática](05-detalhamento-iaas-paas-saas-na-pratica.md)
+* [⬅️ Módulo 1: Edge Locations e Amazon CloudFront](03-edge-locations-e-cloudfront-cache.md)
+* [➡️ Módulo 1: Detalhamento IaaS, PaaS e SaaS na Prática](05-detalhamento-iaas-paas-saas-na-pratica.md)
 
 ---
 ---

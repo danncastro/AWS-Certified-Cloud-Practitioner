@@ -278,8 +278,8 @@ Esse é o próximo conceito importante da infraestrutura global da AWS.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Benefícios da Nuvem: Agilidade e Economia de Escala](01-beneficios-agilidade-economia-escala.md)
-* [➡️ Edge Locations e Amazon CloudFront](03-edge-locations-e-cloudfront-cache.md)
+* [⬅️ Módulo 1: Benefícios da Nuvem: Agilidade e Economia de Escala](01-beneficios-agilidade-economia-escala.md)
+* [➡️ Módulo 1: Edge Locations e Amazon CloudFront](03-edge-locations-e-cloudfront-cache.md)
 
 ---
 ---

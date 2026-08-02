@@ -238,8 +238,8 @@ Associe estes termos aos respectivos serviços:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
-* [➡️ Auditória e Logs - Cloudtrail quem fez oque?](06-auditoria-e-logs-cloudtrail-quem-fez-o-que.md)
+* [⬅️ Módulo 2: Criptografia: KMS vs. CloudHSM e a Regra de Ouro](04-criptografia-kms-vs-cloudhsm-golden-rule.md)
+* [➡️ Módulo 2: Auditória e Logs - Cloudtrail quem fez oque?](06-auditoria-e-logs-cloudtrail-quem-fez-o-que.md)
 
 ---
 ---

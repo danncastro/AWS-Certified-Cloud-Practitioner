@@ -76,8 +76,8 @@ Este material é o resultado de uma simbiose estratégica:
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Caderno de Erros Recorrentes](03-caderno-de-erros-recorrentes.md)
-* [➡️ Plano de Ação de 30 dias](05-plano-de-acao-30-dias.md)
+* [⬅️ Módulo 0: Caderno de Erros Recorrentes](03-caderno-de-erros-recorrentes.md)
+* [➡️ Módulo 0: Plano de Ação de 30 dias](05-plano-de-acao-30-dias.md)
 
 ---
 ---

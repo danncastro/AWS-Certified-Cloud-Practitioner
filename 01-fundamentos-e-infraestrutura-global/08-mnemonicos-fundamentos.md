@@ -233,8 +233,8 @@ Essa associação resolve uma grande quantidade de questões da prova.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Modelos de Implantação e AWS Well-Architected Framework](07-modelos-de-implantacao-e-framework-aws.md)
-* [➡️ Lab: Explorando a Infraestrutura Global da AWS](09-lab-explorando-infraestrutura-global.md)
+* [⬅️ Módulo 1: Modelos de Implantação e AWS Well-Architected Framework](07-modelos-de-implantacao-e-framework-aws.md)
+* [➡️ Módulo 1: Lab: Explorando a Infraestrutura Global da AWS](09-lab-explorando-infraestrutura-global.md)
 
 ---
 ---

@@ -105,8 +105,8 @@ Esse é um dos assuntos mais cobrados na certificação.
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [⬅️ Plano de Ação de 30 dias](../00-estrategias-de-guerra/05-plano-de-acao-30-dias.md)
-* [➡️ Benefícios da Nuvem: Agilidade e Economia de Escala](01-beneficios-agilidade-economia-escala.md)
+* [⬅️ Módulo 0: Plano de Ação de 30 dias](../00-estrategias-de-guerra/05-plano-de-acao-30-dias.md)
+* [➡️ Módulo 1: Benefícios da Nuvem: Agilidade e Economia de Escala](01-beneficios-agilidade-economia-escala.md)
 
 ---
 ---

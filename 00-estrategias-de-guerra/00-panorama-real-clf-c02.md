@@ -28,7 +28,7 @@ Diferente da versão antiga, agora você **precisa** saber onde a IA se posicion
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
-* [➡️ Tecnicas de Leitura de Questões](01-tecnicas-de-leitura-de-questoes.md)
+* [➡️ Módulo 0: Tecnicas de Leitura de Questões](01-tecnicas-de-leitura-de-questoes.md)
 
 ---
 ---
