@@ -166,12 +166,11 @@ Associe rapidamente o problema à solução:
 > - **"Processamento por evento"** → pense em **Lambda**.
 
 ---
----
 
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
 * [⬅️ Módulo 3: Lab - Lançando Instância EC2 com User Data](08-lab-lancando-instancia-ec2-com-userdata.md)
-* [➡️ Módulo 4:]()
+* [➡️ Módulo 4: Amazon S3 - Armazenamento de Objetos e API](../04-armazenamento-e-transferencia/00-s3-armazenamento-de-objetos-api.md)
 
 ---
 ---
