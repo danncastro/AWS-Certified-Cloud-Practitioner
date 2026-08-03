@@ -1,6 +1,6 @@
 # Arquivamento: Glacier Flexible Retrieval vs. Deep Archive
 
-Mano, papo reto: nem todo arquivo precisa ficar disponível em segundos. Pense em backups antigos, documentos fiscais, registros de auditoria ou arquivos que a empresa é obrigada a guardar por anos. Eles quase nunca são acessados, então faz sentido armazená-los na camada mais barata possível.
+Nem todo arquivo precisa ficar disponível em segundos. Pense em backups antigos, documentos fiscais, registros de auditoria ou arquivos que a empresa é obrigada a guardar por anos. Eles quase nunca são acessados, então faz sentido armazená-los na camada mais barata possível.
 
 É exatamente para esse cenário que existem o **S3 Glacier Flexible Retrieval** e o **S3 Glacier Deep Archive**.
 

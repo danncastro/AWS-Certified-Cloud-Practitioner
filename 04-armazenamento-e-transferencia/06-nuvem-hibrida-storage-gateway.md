@@ -1,6 +1,6 @@
 # AWS Storage Gateway: A Ponte para a Nuvem Híbrida
 
-Mano, papo reto: nem toda empresa consegue desligar o data center local e migrar tudo para a AWS da noite para o dia.
+Nem toda empresa consegue desligar o data center local e migrar tudo para a AWS da noite para o dia.
 
 Na prática, muitas aplicações ainda dependem de protocolos tradicionais como **NFS**, **SMB** ou **iSCSI**. Reescrever essas aplicações para conversar diretamente com o Amazon S3 pode custar tempo, dinheiro e muito trabalho.
 

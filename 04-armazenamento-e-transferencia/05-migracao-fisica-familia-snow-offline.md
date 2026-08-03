@@ -1,6 +1,6 @@
 # Família AWS Snow: Migração Física e Offline
 
-Mano, papo reto: normalmente a gente envia dados para a AWS pela internet. O problema é que existe um ponto em que isso simplesmente deixa de ser prático.
+Normalmente a gente envia dados para a AWS pela internet. O problema é que existe um ponto em que isso simplesmente deixa de ser prático.
 
 Imagine migrar dezenas ou centenas de terabytes usando um link corporativo comum. Mesmo com uma conexão dedicada, a transferência pode levar semanas ou meses.
 
