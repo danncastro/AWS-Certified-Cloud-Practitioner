@@ -139,7 +139,7 @@ Associe rapidamente estes conceitos:
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
 * [⬅️ Módulo 5: Amazon RDS: Banco Relacional Gerenciado (SQL)](00-rds-banco-relacional-gerenciado-sql.md)
-* [➡️ Módulo 5: ](02-dynamodb-nosql-chave-valor-escala.md)
+* [➡️ Módulo 5: Amazon DynamoDB - NoSQL, Chave-Valor e Escala Monstruosa](02-dynamodb-nosql-chave-valor-escala.md)
 
 ---
 ---

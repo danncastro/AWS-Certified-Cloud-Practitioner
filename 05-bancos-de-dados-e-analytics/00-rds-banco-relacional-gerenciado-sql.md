@@ -285,7 +285,7 @@ Associe rapidamente cada necessidade ao recurso correto:
 ### 🧭 Navegação de Conteúdos
 * [🏠 Menu Principal](../README.md)
 * [⬅️ Módulo 4: Micro-Simulado - Armazenamento e Transferência](../04-armazenamento-e-transferencia/10-micro-simulado-armazenamento.md)
-* [➡️ Módulo 4: Amazon Aurora - Performance e Resiliência Nativa](01-aurora-performance-e-resiliencia-nativa.md)
+* [➡️ Módulo 5: Amazon Aurora - Performance e Resiliência Nativa](01-aurora-performance-e-resiliencia-nativa.md)
 
 ---
 ---
