@@ -177,7 +177,8 @@ flowchart LR
     class ENDPOINT endpoint;
     class PRIMARY primary;
     class STANDBY standby;
-~~~             AZ-B
+    AZ-B
+~~~  
 
 ### Depois do failover
 
